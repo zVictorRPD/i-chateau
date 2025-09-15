@@ -6,7 +6,12 @@ function closeDrawer() {
 </script>
 
 <template>
-  <UDrawer direction="right" v-model:open="open" title="Menu" description="Navegação do site">
+  <UDrawer
+    direction="right"
+    v-model:open="open"
+    title="Menu"
+    description="Navegação do site"
+  >
     <UButton
       class="inline-flex md:hidden"
       color="neutral"
@@ -27,26 +32,22 @@ function closeDrawer() {
 
           <ul class="flex flex-col gap-4 items-end font-medium text-lg w-full">
             <li class="border-b border-primary/20 w-full text-end pb-2">
-              <NuxtLink to="/properties" @click="closeDrawer" :prefetch="false">
-                Imóveis
-              </NuxtLink>
+              <ULink to="/properties" @click="closeDrawer" active-class="font-bold border-b"> Imóveis </ULink>
             </li>
             <li class="border-b border-primary/20 w-full text-end pb-2">
-              <NuxtLink to="/blog" @click="closeDrawer"> Blog </NuxtLink>
+              <ULink to="/blog" @click="closeDrawer" active-class="font-bold border-b"> Blog </ULink>
             </li>
             <li class="border-b border-primary/20 w-full text-end pb-2">
-              <NuxtLink to="/contact" @click="closeDrawer"> Contato </NuxtLink>
+              <ULink to="/contact" @click="closeDrawer" active-class="font-bold border-b"> Contato </ULink>
             </li>
             <li class="border-b border-primary/20 w-full text-end pb-2">
-              <NuxtLink to="/about-us" @click="closeDrawer">
-                Sobre nós
-              </NuxtLink>
+              <ULink to="/about-us" @click="closeDrawer" active-class="font-bold border-b"> Sobre nós </ULink>
             </li>
           </ul>
           <UButton
             size="lg"
             class="px-6 inline-flex"
-            as="NuxtLink"
+            as="ULink"
             to="/auth/login"
           >
             Entrar

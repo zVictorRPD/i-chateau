@@ -6,7 +6,9 @@ import HomeHeader from "~/components/layouts/home/header.vue";
 <template>
   <HomeHeader />
   <main>
-    <slot />
+    <UContainer>
+      <slot />
+    </UContainer>
   </main>
   <FooterHome />
 </template>

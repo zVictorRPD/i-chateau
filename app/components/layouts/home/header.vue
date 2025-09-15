@@ -7,30 +7,30 @@ import MobileNavbar from "./mobile-navbar.vue";
 <template>
   <header class="py-6">
     <UContainer class="flex items-center justify-between">
-      <NuxtLink to="/">
+      <ULink to="/" active-class="false">
         <Logo />
-      </NuxtLink>
+      </ULink>
       <nav class="flex items-center gap-8 lg:gap-24">
         <ul class="hidden md:flex gap-6 lg:gap-8 font-medium text-lg">
           <li>
-            <NuxtLink to="/properties" class="hover:border-b-2 pb-1"> Imóveis </NuxtLink>
+            <ULink to="/properties" class="hover:border-b-2 pb-1" active-class="border-b-2"> Imóveis </ULink>
           </li>
           <li>
-            <NuxtLink to="/blog" class="hover:border-b-2 pb-1"> Blog </NuxtLink>
+            <ULink to="/blog" class="hover:border-b-2 pb-1" active-class="border-b-2"> Blog </ULink>
           </li>
           <li>
-            <NuxtLink to="/contact" class="hover:border-b-2 pb-1"> Contato </NuxtLink>
+            <ULink to="/contact" class="hover:border-b-2 pb-1" active-class="border-b-2"> Contato </ULink>
           </li>
           <li>
-            <NuxtLink to="/about-us" class="hover:border-b-2 pb-1"> Sobre nós </NuxtLink>
+            <ULink to="/about-us" class="hover:border-b-2 pb-1" active-class="border-b-2"> Sobre nós </ULink>
           </li>
         </ul>
         <div class="flex gap-3">
-          <NuxtLink to="/auth/login">
+          <ULink to="/auth/login">
             <UButton size="lg" class="px-6 hidden md:inline-flex">
               Entrar
             </UButton>
-          </NuxtLink>
+          </ULink>
           <ColorModeButton />
           <MobileNavbar />
         </div>
@@ -38,9 +38,3 @@ import MobileNavbar from "./mobile-navbar.vue";
     </UContainer>
   </header>
 </template>
-
-<style scoped>
-.router-link-active {
-  border-bottom: 2px solid;
-}
-</style>
