@@ -13,24 +13,51 @@ import MobileNavbar from "./mobile-navbar.vue";
       <nav class="flex items-center gap-8 lg:gap-24">
         <ul class="hidden md:flex gap-6 lg:gap-8 font-medium text-lg">
           <li>
-            <ULink to="/properties" class="hover:border-b-2 pb-1" active-class="border-b-2"> Imóveis </ULink>
+            <ULink
+              to="/properties"
+              class="hover:border-b-2 pb-1"
+              active-class="border-b-2"
+            >
+              Imóveis
+            </ULink>
           </li>
           <li>
-            <ULink to="/blog" class="hover:border-b-2 pb-1" active-class="border-b-2"> Blog </ULink>
+            <ULink
+              to="/blog"
+              class="hover:border-b-2 pb-1"
+              active-class="border-b-2"
+            >
+              Blog
+            </ULink>
           </li>
           <li>
-            <ULink to="/contact" class="hover:border-b-2 pb-1" active-class="border-b-2"> Contato </ULink>
+            <ULink
+              to="/contact"
+              class="hover:border-b-2 pb-1"
+              active-class="border-b-2"
+            >
+              Contato
+            </ULink>
           </li>
           <li>
-            <ULink to="/about-us" class="hover:border-b-2 pb-1" active-class="border-b-2"> Sobre nós </ULink>
+            <ULink
+              to="/about-us"
+              class="hover:border-b-2 pb-1"
+              active-class="border-b-2"
+            >
+              Sobre nós
+            </ULink>
           </li>
         </ul>
         <div class="flex gap-3">
-          <ULink to="/auth/login">
-            <UButton size="lg" class="px-6 hidden md:inline-flex">
-              Entrar
-            </UButton>
-          </ULink>
+          <UButton
+            size="lg"
+            class="px-6 hidden md:inline-flex"
+            as="ULink"
+            to="/auth/login"
+          >
+            Entrar
+          </UButton>
           <ColorModeButton />
           <MobileNavbar />
         </div>
