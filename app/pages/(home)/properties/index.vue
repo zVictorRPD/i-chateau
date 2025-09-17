@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { usePropertiesStore } from "~/stores/properties";
+
+const propertiesStore = usePropertiesStore();
+</script>
+
 <template>
   <div class="flex gap-4">
     <aside
@@ -7,8 +13,20 @@
     </aside>
     <section class="flex-1 flex flex-col gap-4 pb-4">
       <HomePropertiesListOptions />
-      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-        <HomePropertiesPropertyGridCard v-for="property in 16" :key="property" />
+      <div
+        v-if="propertiesStore.isGridStyle"
+        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
+      >
+        <HomePropertiesPropertyGridCard
+          v-for="property in 16"
+          :key="property"
+        />
+      </div>
+      <div v-else class="flex flex-col gap-4">
+        <HomePropertiesPropertyListCard
+          v-for="property in 16"
+          :key="property"
+        />
       </div>
     </section>
   </div>

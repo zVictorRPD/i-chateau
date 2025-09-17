@@ -13,8 +13,18 @@ const propertiesStore = usePropertiesStore();
       >
         Filtros
       </UButton>
-      <UButton variant="ghost" size="lg" :icon="'i-lucide-layout-grid'" />
-      <UButton variant="ghost" size="lg" :icon="'i-lucide-list'" />
+      <UButton
+        :variant="propertiesStore.isGridStyle ? 'solid' : 'ghost'"
+        size="lg"
+        :icon="'i-lucide-layout-grid'"
+        @click="propertiesStore.changeListStyle('grid')"
+      />
+      <UButton
+        :variant="!propertiesStore.isGridStyle ? 'solid' : 'ghost'"
+        size="lg"
+        :icon="'i-lucide-list'"
+        @click="propertiesStore.changeListStyle('list')"
+      />
     </div>
     <div class="flex items-center gap-2">
       <span class="text-muted">Ordenar por</span>

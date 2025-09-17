@@ -6,14 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 const swiperNavigation = {
   nextEl: ".swiper-next-button",
   prevEl: ".swiper-prev-button",
-  disabledClass: "hide-slider-button",
 };
 </script>
 
 <template>
   <div class="flex flex-col gap-2 max-w-[269px] mx-auto">
     <div>
-      <Swiper :slides-per-view="1" :navigation="swiperNavigation" :modules="[Navigation]">
+      <Swiper
+        :slides-per-view="1"
+        :navigation="swiperNavigation"
+        :modules="[Navigation]"
+      >
         <SwiperSlide v-for="n in 3" :key="n">
           <div class="aspect-square overflow-hidden">
             <NuxtImg
@@ -29,14 +32,14 @@ const swiperNavigation = {
           </div>
         </SwiperSlide>
         <UButton
-          class="hide-slider-button swiper-prev-button absolute top-1/2 -translate-y-1/2 left-2 z-10 rounded-full"
+          class="swiper-prev-button absolute top-1/2 -translate-y-1/2 left-2 z-10 rounded-full"
           aria-label="Slide anterior"
           tabindex="0"
           size="xs"
           icon="i-lucide-chevron-left"
         />
         <UButton
-          class="hide-slider-button swiper-next-button absolute top-1/2 -translate-y-1/2 right-2 z-10 rounded-full"
+          class="swiper-next-button absolute top-1/2 -translate-y-1/2 right-2 z-10 rounded-full"
           aria-label="Próximo slide"
           tabindex="0"
           size="xs"
@@ -44,20 +47,26 @@ const swiperNavigation = {
         />
       </Swiper>
     </div>
-    <div class="flex justify-between items-center">
-      <div class="flex items-center gap-0.5">
-        <h3 class="font-bold text-lg">R$ 1350</h3>
-        <span class="text-muted">/mês</span>
-      </div>
-      <UButton
-        :icon="'i-lucide-heart'"
-        variant="ghost"
-        size="sm"
-        aria-label="Salvar imóvel"
-      />
-    </div>
     <div>
-      <p class="text-sm font-semibold">Endereço do local, No. 9999</p>
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-0.5">
+          <h3 class="font-bold text-lg">R$ 1350</h3>
+          <span class="text-muted">/mês</span>
+        </div>
+        <UButton
+          :icon="'i-lucide-heart'"
+          variant="ghost"
+          size="sm"
+          aria-label="Salvar imóvel"
+        />
+      </div>
+      <div>
+        <p class="text-muted text-xs">Cond. R$ 350 | IPTU R$ 50</p>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold">Endereço do local, Cidade</p>
     </div>
     <div class="flex items-center gap-4 text-muted">
       <div class="flex gap-0.5 items-center">
@@ -79,9 +88,3 @@ const swiperNavigation = {
     </div>
   </div>
 </template>
-
-<style scoped>
-.hide-slider-button {
-  display: none !important;
-}
-</style>
