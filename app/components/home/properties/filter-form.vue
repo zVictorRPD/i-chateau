@@ -149,7 +149,7 @@ const garageValue = ref<RadioGroupValue>();
       </div>
     </div>
     <div
-      class="sticky bottom-0 left-0 flex w-full p-4 bg-white border-t border-primary/20 gap-2"
+      class="sticky bottom-0 left-0 flex w-full p-4 bg-bg border-t border-primary/20 gap-2"
     >
       <UButton variant="soft" color="primary" block size="lg"
         >Limpar filtros</UButton
