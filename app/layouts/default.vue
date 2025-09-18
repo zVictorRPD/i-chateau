@@ -1,7 +1,7 @@
 <template>
   <LayoutsHomeHeader />
   <main>
-    <UContainer>
+    <UContainer class="py-4 md:py-8">
       <slot />
     </UContainer>
   </main>

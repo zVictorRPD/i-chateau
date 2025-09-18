@@ -15,14 +15,14 @@ const isDark = computed({
   <ClientOnly v-if="!colorMode?.forced">
     <template v-if="!isDark">
       <img
-        src="~/assets/img/light-logo.png"
+        src="/img/logo/light-logo.png"
         class="hidden md:block"
         width="176"
         height="28"
         alt="i chateau logo"
       />
       <img
-        src="~/assets/img/short-light-logo.png"
+        src="/img/logo/short-light-logo.png"
         class="block md:hidden"
         width="32"
         height="28"
@@ -31,14 +31,14 @@ const isDark = computed({
     </template>
     <template v-else>
       <img
-        src="~/assets/img/dark-logo.png"
+        src="/img/logo/dark-logo.png"
         class="hidden md:block"
         width="176"
         height="28"
         alt="i chateau logo"
       />
       <img
-        src="~/assets/img/short-dark-logo.png"
+        src="/img/logo/short-dark-logo.png"
         class="block md:hidden"
         width="32"
         height="28"
