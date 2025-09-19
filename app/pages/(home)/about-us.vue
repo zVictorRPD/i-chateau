@@ -1,5 +1,7 @@
 <template>
-  <HomeBanner 
-    title="Sobre nós"
-  />
+  <HomeBanner title="Sobre nós" />
+  <HomeAboutUsStory />
+  <HomeAboutUsCards />
+  <HomeAboutUsTimeline />
+  <HomeAboutUsTeam />
 </template>
