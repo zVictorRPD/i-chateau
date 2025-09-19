@@ -57,7 +57,7 @@ const team = [
       <h2 class="text-3xl text-center font-medium mb-4 md:mb-8">
         Conheça nosso Time
       </h2>
-      <div class="grid grid-cols-4 gap-x-4 gap-y-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8">
         <div v-for="member in team" :key="member.id" class="flex flex-col items-center">
           <div class="w-28 h-28 mb-2">
             <img
