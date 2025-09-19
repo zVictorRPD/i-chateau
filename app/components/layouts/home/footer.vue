@@ -29,7 +29,7 @@
               </li>
               <li>
                 <ULink to="/privacy" class="hover:underline">
-                  Portal de Privacidade
+                  Política de Privacidade
                 </ULink>
               </li>
             </ul>

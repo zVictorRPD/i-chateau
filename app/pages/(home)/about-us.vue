@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>about-us page</h1>
-  </div>
+  <HomeBanner 
+    title="Sobre nós"
+  />
 </template>
