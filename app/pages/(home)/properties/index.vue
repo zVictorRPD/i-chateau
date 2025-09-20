@@ -18,10 +18,10 @@ const propertiesStore = usePropertiesStore();
           v-if="propertiesStore.isGridStyle"
           class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
         >
-          <HomePropertiesGridCard v-for="property in 16" :key="property" />
+          <HomePropertiesGridCard v-for="property in 16" :number="property" :key="property" />
         </div>
         <div v-else class="flex flex-col gap-4">
-          <HomePropertiesListCard v-for="property in 16" :key="property" />
+          <HomePropertiesListCard v-for="property in 16" :number="property" :key="property" />
         </div>
       </section>
     </div>
