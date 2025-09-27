@@ -55,7 +55,7 @@ const team = [
   <div class="bg-gray-100 dark:bg-old-neutral-900">
     <HomeContainer class="py-4 md:py-8">
       <h2 class="text-3xl text-center font-medium mb-4 md:mb-8">
-        Conheça nosso Time
+        Conheça Nosso Time
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8">
         <div v-for="member in team" :key="member.id" class="flex flex-col items-center">

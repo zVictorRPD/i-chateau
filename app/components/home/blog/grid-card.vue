@@ -19,7 +19,7 @@
         <h2 class="text-xl font-bold">
           Lorem ipsum dolor sit amet. Lorem, ipsum.
         </h2>
-        <p class="text-gray-700 line-clamp-2">
+        <p class="text-gray-700 dark:text-gray-300 line-clamp-2">
           This is a brief description of the blog post. It provides an overview of
           the content and entices readers to click through and read more.
         </p>
