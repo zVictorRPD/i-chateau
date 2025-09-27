@@ -52,7 +52,7 @@ import MobileNavbar from "./mobile-navbar.vue";
         <div class="flex gap-3">
           <UButton
             size="lg"
-            class="px-6 hidden md:inline-flex"
+            class="px-6 hidden md:inline-flex pointer-events-none"
             as="ULink"
             to="/auth/login"
           >
