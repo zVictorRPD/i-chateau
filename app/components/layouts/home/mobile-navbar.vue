@@ -44,14 +44,13 @@ function closeDrawer() {
               <ULink to="/about-us" @click="closeDrawer" active-class="font-bold border-b"> Sobre nós </ULink>
             </li>
           </ul>
-          <UButton
+           <UButton
             size="lg"
-            class="px-6 inline-flex pointer-events-none"
-            as="ULink"
-            to="/auth/login"
+            class="px-6 inline-flex"
+            @click="closeDrawer"
           >
             Entrar
-          </UButton>
+          </UButton> 
         </div>
       </nav>
     </template>
