@@ -17,7 +17,7 @@ defineProps<{
   <ULink
     as="div"
     to="/properties/1"
-    class="flex justify-center hover:opacity-100 hover:scale-[1.02] transition-all duration-200"
+    class="flex justify-center hover:opacity-100 lg:hover:scale-[1.02] transition-all duration-200"
   >
     <div class="flex flex-col gap-2 max-w-[269px]">
       <div>

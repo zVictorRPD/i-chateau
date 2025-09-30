@@ -20,7 +20,7 @@ const neighborhoods = [
         :key="index"
       >
         <div
-          class="w-52 h-80 mx-auto flex flex-col items-center gap-2 relative neighborhood-card hover:scale-105 transition-transform duration-300"
+          class="w-52 h-80 mx-auto flex flex-col items-center gap-2 relative neighborhood-card lg:hover:scale-105 transition-transform duration-300"
         >
           <img
             :src="neighborhood.image"

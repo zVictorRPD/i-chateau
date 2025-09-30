@@ -17,7 +17,7 @@ defineProps<{
   <ULink
     as="div"
     to="/properties/1"
-    class="block hover:opacity-100 hover:scale-[1.01] hover:shadow-md transition-all duration-200"
+    class="block hover:opacity-100 lg:hover:scale-[1.01] hover:shadow-md transition-all duration-200"
   >
     <div
       class="flex w-full max-w-[840px] max-h-52 gap-2 border rounded-md border-gray-300"

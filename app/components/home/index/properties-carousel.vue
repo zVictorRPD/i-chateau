@@ -38,7 +38,7 @@ const swiperNavigation = computed(() => ({
         }"
       >
         <SwiperSlide v-for="property in 16" :key="property">
-          <HomePropertiesGridCard :number="property" class="sm:justify-start" />
+          <HomePropertiesGridCard :number="property" class="sm:justify-start hover:scale-100" />
         </SwiperSlide>
       </Swiper>
     </div>

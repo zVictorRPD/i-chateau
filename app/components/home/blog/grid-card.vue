@@ -5,7 +5,7 @@
         <img
         src="/img/blog/blog.jpg"
         alt="Blog Image"
-        class="w-full h-full object-cover rounded-lg group-hover:scale-[1.02] transition-transform duration-300"
+        class="w-full h-full object-cover rounded-lg lg:group-hover:scale-[1.02] transition-transform duration-300"
         />
       </div>
       <div class="flex flex-col gap-2.5">

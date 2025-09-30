@@ -46,7 +46,7 @@ function closeDrawer() {
           </ul>
           <UButton
             size="lg"
-            class="px-6 inline-flex"
+            class="px-6 inline-flex pointer-events-none"
             as="ULink"
             to="/auth/login"
           >
